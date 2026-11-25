@@ -1,0 +1,25 @@
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="sticky top-0 z-40 border-b border-line bg-white pt-[env(safe-area-inset-top)]">
+  <div class="wrap relative flex h-16 items-center gap-1 sm:gap-2 lg:h-[76px]">
+    <a href="index.html" class="mr-auto flex items-center gap-2.5 no-underline lg:mr-6" aria-label="PIXEL PLAY, accueil">
+      <img src="assets/img/logo.png" alt="" width="40" height="40" class="h-10 w-10">
+      <span class="font-display text-[1.65rem] font-extrabold italic uppercase leading-none tracking-tight">Pixel Play</span>
+    </a>
+    <nav id="menu" aria-label="Navigation principale" class="absolute left-0 right-0 top-full flex-col border-b border-line bg-white px-4 pb-3 pt-1 sm:px-6 lg:static lg:ml-auto lg:mr-3 lg:flex-row lg:items-stretch lg:border-0 lg:bg-transparent lg:p-0">
+      <a class="navlink" data-nav="home" href="index.html">Accueil</a>
+      <a class="navlink" data-nav="jeux" href="jeux.html">Jeux vidéo</a>
+      <a class="navlink" data-nav="sell" href="vendre-mon-appareil.html">Vente</a>
+    </nav>
+    <button type="button" id="search-toggle" class="iconbtn" aria-label="Rechercher un produit" aria-expanded="false" aria-controls="searchbar">{{icon:search}}</button>
+    <a id="cart-link" class="iconbtn relative" href="panier.html" aria-label="Panier, 0 article">{{icon:cart}}<span id="cart-badge" hidden class="absolute right-0.5 top-0.5 flex h-5 min-w-[20px] items-center justify-center rounded-full bg-violet px-1 text-[0.6875rem] font-bold text-ink" aria-hidden="true"></span></a>
+    <a class="btn btn-wa btn-sm !px-0 w-11 sm:w-auto sm:!px-4" data-link="wa" href="{{waGeneric}}" target="_blank" rel="noopener noreferrer" aria-label="Contacter PIXEL PLAY sur WhatsApp">{{icon:wa}}<span class="hidden sm:inline">WhatsApp</span></a>
+    <button type="button" id="burger" class="iconbtn lg:hidden" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span data-i="open">{{icon:menu}}</span><span data-i="close" hidden>{{icon:close}}</span></button>
+  </div>
+  <div id="searchbar" hidden class="border-t border-line bg-mist">
+    <form id="search-form" role="search" class="wrap flex gap-2 py-3">
+      <label class="sr" for="q">Rechercher un produit</label>
+      <input class="field" id="q" type="search" name="q" placeholder="Rechercher un appareil ou un jeu…" autocomplete="off" enterkeyhint="search">
+      <button class="btn flex-none" type="submit">Rechercher</button>
+    </form>
+  </div>
+</header>

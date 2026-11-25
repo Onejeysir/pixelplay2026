@@ -1,0 +1,66 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/jeux/numeriques",
+      "destination": "/jeux-numeriques"
+    },
+    {
+      "source": "/jeux/physiques",
+      "destination": "/jeux-physiques"
+    },
+    {
+      "source": "/produit/:id",
+      "destination": "/produit?id=:id"
+    },
+    {
+      "source": "/contact",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/consoles",
+      "destination": "/?cat=console#catalogue",
+      "permanent": false
+    },
+    {
+      "source": "/appareils",
+      "destination": "/#catalogue",
+      "permanent": false
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/consoles.html",
+      "destination": "/?cat=console#catalogue",
+      "permanent": false
+    },
+    {
+      "source": "/appareils.html",
+      "destination": "/#catalogue",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    }
+  ]
+}

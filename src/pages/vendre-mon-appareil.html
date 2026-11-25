@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<!--@head-->
+<title>Vendre mon appareil | PIXEL PLAY</title>
+<meta name="description" content="Proposez votre ordinateur, téléphone ou console à PIXEL PLAY pour une estimation et un éventuel rachat. Par WhatsApp ou par e-mail.">
+</head>
+<body data-page="sell" data-nav="sell" class="min-h-screen">
+<!--@header-->
+<main id="main" tabindex="-1" class="outline-none">
+<section class="bg-violet-lav">
+  <div class="wrap py-9 md:py-14">
+    <h1>Vendre mon appareil</h1>
+    <p class="mt-4 max-w-[60ch] text-lg text-mute">Vous souhaitez vendre votre appareil ? Proposez votre ordinateur, téléphone ou console à PIXEL PLAY en quelques instants. Contactez-nous par WhatsApp ou par e-mail, selon votre préférence.</p>
+  </div>
+</section>
+<section class="wrap py-8 md:py-12">
+  <div class="grid gap-10 lg:grid-cols-[1fr_320px] lg:gap-14">
+    <div id="app"><p class="py-10 text-mute">Chargement du formulaire… Si rien ne s'affiche, activez JavaScript.</p></div>
+    <aside class="h-fit border border-line bg-mist p-5 lg:sticky lg:top-28" aria-labelledby="direct-title">
+      <h2 id="direct-title" class="!text-3xl">Une question ?</h2>
+      <p class="mt-3 text-[0.9375rem] text-mute">Écrivez-nous directement, sans remplir le formulaire.</p>
+      <div class="mt-4 grid gap-3">
+        <a class="btn btn-wa" data-link="wa" href="{{waGeneric}}" target="_blank" rel="noopener noreferrer">{{icon:wa}}WhatsApp</a>
+        <a class="btn" data-link="mail" href="mailto:{{email}}">{{icon:mail}}E-mail</a>
+      </div>
+      <p class="mt-5 text-[0.9375rem] text-mute"><strong class="text-ink">PIXEL PLAY</strong><br><span data-cfg="address">{{address}}</span>, <span data-cfg="city">{{city}}</span><br>
+        <a class="link" data-link="tel" href="tel:{{phoneTel}}"><span data-cfg="phoneDisplay">{{phoneDisplay}}</span></a> · <a class="link" data-link="map" href="{{mapUrl}}" target="_blank" rel="noopener noreferrer">Voir sur la carte</a></p>
+    </aside>
+  </div>
+</section>
+</main>
+<!--@footer-->
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
